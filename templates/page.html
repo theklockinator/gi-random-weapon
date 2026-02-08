@@ -10,5 +10,11 @@
     <body>
         <p class="preserve">{{ result[0] }}</p>
         <p class="preserve">{{ result[1] }}</p>
+
+        <form method="get" action="{{ url_for('home') }}">
+            <button type="submit">Regenerate</button>
+        </form>
+
+        <p class="preserve">Share: <a href="{{ result[2] }}">{{ result[2] }}</a></p>
     </body>
 </html>

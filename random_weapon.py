@@ -53,5 +53,5 @@ def main(extended_limits):
     else: # ATK / HP
         w_substat = round((15 * (w_stars - 2) + 15) * r_substat, 1)
 
-    return f"{w_stars}* {w_type}", f"ATK {w_mainstat}{' '*4}{w_substattype} {w_substat}{'%' if r_substattype != 5 else ''}"
-
+    # return f"{w_stars}* {w_type}", f"ATK {w_mainstat}{' '*4}{w_substattype} {w_substat}{'%' if r_substattype != 5 else ''}"
+    return w_stars, w_type, w_mainstat, w_substattype, w_substat
